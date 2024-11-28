@@ -1,0 +1,121 @@
+/* Main login page container */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Login container (card style) */
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header section */
+.login-header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Error message */
+.error {
+    color: #ff5252;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #667eea;
+}
+
+/* Button styling */
+.login-button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #667eea;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #5649c1;
+    transform: scale(1.03);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-header h1 {
+        font-size: 20px;
+    }
+
+    .login-header p {
+        font-size: 13px;
+    }
+
+    .login-form input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .login-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        padding: 15px;
+    }
+
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-header h1 {
+        font-size: 18px;
+    }
+
+    .login-header p {
+        font-size: 12px;
+    }
+}

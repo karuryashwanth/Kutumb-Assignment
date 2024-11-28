@@ -1,0 +1,65 @@
+.quote-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.quote-image {
+    position: relative;
+    height: 250px;
+    /* Set a fixed height for the image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.quote-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.quote-meta {
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.username {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.createdAat {
+    color: #777;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .quote-image {
+        height: 200px;
+        /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-image {
+        height: 180px;
+        /* Further adjust for mobile screens */
+    }
+
+    .quote-text {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
